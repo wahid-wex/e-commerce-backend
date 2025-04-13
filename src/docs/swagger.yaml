@@ -1,0 +1,853 @@
+definitions:
+  github_com_wahid-wex_e-commerce-backend_api_dto.CategoryResponse:
+    properties:
+      description:
+        type: string
+      imageUrl:
+        type: string
+      name:
+        type: string
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.CreateUpdateCategoryRequest:
+    properties:
+      description:
+        maxLength: 300
+        minLength: 10
+        type: string
+      imageUrl:
+        maxLength: 100
+        minLength: 3
+        type: string
+      name:
+        maxLength: 20
+        minLength: 3
+        type: string
+    required:
+    - description
+    - imageUrl
+    - name
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.CreateUpdateProductRequest:
+    properties:
+      category:
+        type: integer
+      description:
+        maxLength: 200
+        minLength: 30
+        type: string
+      imageUrl:
+        maxLength: 100
+        minLength: 3
+        type: string
+      name:
+        maxLength: 20
+        minLength: 3
+        type: string
+      price:
+        type: number
+      productAttributes:
+        items:
+          type: integer
+        type: array
+      productStocks:
+        items:
+          type: integer
+        type: array
+      seller:
+        type: integer
+    required:
+    - category
+    - description
+    - imageUrl
+    - name
+    - price
+    - productAttributes
+    - productStocks
+    - seller
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.Filter:
+    properties:
+      filterType:
+        description: text number
+        type: string
+      from:
+        type: string
+      to:
+        type: string
+      type:
+        description: contains notContains equals notEqual startsWith lessThan lessThanOrEqual
+          greaterThan greaterThanOrEqual inRange endsWith
+        type: string
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.GetOtpRequest:
+    properties:
+      mobileNumber:
+        maxLength: 11
+        minLength: 11
+        type: string
+    required:
+    - mobileNumber
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.LoginByUsernameRequest:
+    properties:
+      password:
+        minLength: 6
+        type: string
+      username:
+        minLength: 5
+        type: string
+    required:
+    - password
+    - username
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.PagedList-github_com_wahid-wex_e-commerce-backend_api_dto_CategoryResponse:
+    properties:
+      hasNextPage:
+        type: boolean
+      hasPreviousPage:
+        type: boolean
+      items:
+        items:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CategoryResponse'
+        type: array
+      pageNumber:
+        type: integer
+      totalPages:
+        type: integer
+      totalRows:
+        type: integer
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.PagedList-github_com_wahid-wex_e-commerce-backend_api_dto_ProductResponse:
+    properties:
+      hasNextPage:
+        type: boolean
+      hasPreviousPage:
+        type: boolean
+      items:
+        items:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.ProductResponse'
+        type: array
+      pageNumber:
+        type: integer
+      totalPages:
+        type: integer
+      totalRows:
+        type: integer
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.PaginationInputWithFilter:
+    properties:
+      filter:
+        additionalProperties:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.Filter'
+        type: object
+      pageNumber:
+        type: integer
+      pageSize:
+        type: integer
+      sort:
+        items:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.Sort'
+        type: array
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.ProductResponse:
+    properties:
+      description:
+        type: string
+      imageUrl:
+        type: string
+      isActive:
+        type: boolean
+      name:
+        type: string
+      price:
+        type: number
+      satisfactionRate:
+        type: number
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.RegisterCustomerByUsernameRequest:
+    properties:
+      cardNumber:
+        type: string
+      email:
+        minLength: 6
+        type: string
+      firstName:
+        minLength: 3
+        type: string
+      lastName:
+        minLength: 6
+        type: string
+      password:
+        minLength: 6
+        type: string
+      phone:
+        type: string
+      postalCode:
+        type: string
+      shippingAddress:
+        type: string
+      username:
+        minLength: 5
+        type: string
+    required:
+    - cardNumber
+    - firstName
+    - lastName
+    - password
+    - phone
+    - postalCode
+    - shippingAddress
+    - username
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.RegisterLoginByMobileRequest:
+    properties:
+      mobileNumber:
+        maxLength: 11
+        minLength: 11
+        type: string
+      otp:
+        maxLength: 6
+        minLength: 6
+        type: string
+    required:
+    - mobileNumber
+    - otp
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.RegisterSellerByUsernameRequest:
+    properties:
+      address:
+        minLength: 5
+        type: string
+      description:
+        type: string
+      email:
+        minLength: 6
+        type: string
+      logo:
+        type: string
+      nationalId:
+        type: string
+      password:
+        minLength: 6
+        type: string
+      phone:
+        minLength: 5
+        type: string
+      storeName:
+        minLength: 3
+        type: string
+      username:
+        minLength: 5
+        type: string
+    required:
+    - address
+    - nationalId
+    - password
+    - phone
+    - storeName
+    - username
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.Sort:
+    properties:
+      colId:
+        type: string
+      sort:
+        type: string
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse:
+    properties:
+      error: {}
+      result: {}
+      resultCode:
+        $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.ResultCode'
+      success:
+        type: boolean
+      validationErrors:
+        items:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_validation.ValidationError'
+        type: array
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_helper.ResultCode:
+    enum:
+    - 0
+    - 40001
+    - 40101
+    - 40301
+    - 40401
+    - 42901
+    - 42902
+    - 50001
+    - 50002
+    type: integer
+    x-enum-varnames:
+    - Success
+    - ValidationError
+    - AuthError
+    - ForbiddenError
+    - NotFoundError
+    - LimiterError
+    - OtpLimiterError
+    - CustomRecovery
+    - InternalError
+  github_com_wahid-wex_e-commerce-backend_api_validation.ValidationError:
+    properties:
+      message:
+        type: string
+      property:
+        type: string
+      tag:
+        type: string
+      value:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /v1/categories/:
+    post:
+      consumes:
+      - application/json
+      description: Create a Category
+      parameters:
+      - description: Create a Category
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CreateUpdateCategoryRequest'
+      responses:
+        "201":
+          description: Category response
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+            - properties:
+                result:
+                  $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CategoryResponse'
+              type: object
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Create a Category
+      tags:
+      - Categories
+  /v1/categories/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete a Category
+      parameters:
+      - description: Id
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        "200":
+          description: response
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Delete a Category
+      tags:
+      - Categories
+    get:
+      consumes:
+      - application/json
+      description: Get a Category
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        "200":
+          description: Category response
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+            - properties:
+                result:
+                  $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CategoryResponse'
+              type: object
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Get a Category
+      tags:
+      - Categories
+    put:
+      consumes:
+      - application/json
+      description: Update a Category
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Update a Category
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CreateUpdateCategoryRequest'
+      responses:
+        "200":
+          description: Category response
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+            - properties:
+                result:
+                  $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CategoryResponse'
+              type: object
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Update a Category
+      tags:
+      - Categories
+  /v1/categories/get-by-filter:
+    post:
+      consumes:
+      - application/json
+      description: Get a Category
+      parameters:
+      - description: Request
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.PaginationInputWithFilter'
+      responses:
+        "200":
+          description: Category response
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+            - properties:
+                result:
+                  $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.PagedList-github_com_wahid-wex_e-commerce-backend_api_dto_CategoryResponse'
+              type: object
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Get a Category
+      tags:
+      - Categories
+  /v1/products/:
+    post:
+      consumes:
+      - application/json
+      description: Create a Product
+      parameters:
+      - description: Create a Product
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CreateUpdateProductRequest'
+      responses:
+        "201":
+          description: Product response
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+            - properties:
+                result:
+                  $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.ProductResponse'
+              type: object
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Create a Product
+      tags:
+      - Products
+  /v1/products/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete a Product
+      parameters:
+      - description: Id
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        "200":
+          description: response
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Delete a Product
+      tags:
+      - Products
+    get:
+      consumes:
+      - application/json
+      description: Get a Product
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        "200":
+          description: Product response
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+            - properties:
+                result:
+                  $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.ProductResponse'
+              type: object
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Get a Product
+      tags:
+      - Products
+    put:
+      consumes:
+      - application/json
+      description: Update a Product
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Update a Product
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CreateUpdateProductRequest'
+      responses:
+        "200":
+          description: Product response
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+            - properties:
+                result:
+                  $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.ProductResponse'
+              type: object
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Update a Product
+      tags:
+      - Products
+  /v1/products/get-by-filter:
+    post:
+      consumes:
+      - application/json
+      description: Get a Product
+      parameters:
+      - description: Request
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.PaginationInputWithFilter'
+      responses:
+        "200":
+          description: Product response
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+            - properties:
+                result:
+                  $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.PagedList-github_com_wahid-wex_e-commerce-backend_api_dto_ProductResponse'
+              type: object
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Get a Product
+      tags:
+      - Products
+  /v1/users/login-by-mobile:
+    post:
+      consumes:
+      - application/json
+      description: RegisterLoginCustomerByMobileNumber
+      parameters:
+      - description: RegisterLoginByMobileRequest
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.RegisterLoginByMobileRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Success
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "409":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      summary: RegisterLoginCustomerByMobileNumber
+      tags:
+      - Users
+  /v1/users/login-by-username:
+    post:
+      consumes:
+      - application/json
+      description: LoginCustomerByUsername
+      parameters:
+      - description: LoginByUsernameRequest
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.LoginByUsernameRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Success
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "409":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      summary: LoginCustomerByUsername
+      tags:
+      - Users
+  /v1/users/login-seller-by-mobile:
+    post:
+      consumes:
+      - application/json
+      description: RegisterLoginSellerByMobileNumber
+      parameters:
+      - description: RegisterLoginByMobileRequest
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.RegisterLoginByMobileRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Success
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "409":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      summary: RegisterLoginSellerByMobileNumber
+      tags:
+      - Users
+  /v1/users/login-seller-by-username:
+    post:
+      consumes:
+      - application/json
+      description: LoginSellerByUsername
+      parameters:
+      - description: LoginByUsernameRequest
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.LoginByUsernameRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Success
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "409":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      summary: LoginSellerByUsername
+      tags:
+      - Users
+  /v1/users/register-customer-by-username:
+    post:
+      consumes:
+      - application/json
+      description: RegisterCustomerByUsername
+      parameters:
+      - description: RegisterCustomerByUsernameRequest
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.RegisterCustomerByUsernameRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Success
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "409":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      summary: RegisterCustomerByUsername
+      tags:
+      - Users
+  /v1/users/register-seller-by-username:
+    post:
+      consumes:
+      - application/json
+      description: RegisterSellerByUsername
+      parameters:
+      - description: RegisterSellerByUsernameRequest
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.RegisterSellerByUsernameRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Success
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "409":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      summary: RegisterSellerByUsername
+      tags:
+      - Users
+  /v1/users/send-otp:
+    post:
+      consumes:
+      - application/json
+      description: Send otp to user
+      parameters:
+      - description: GetOtpRequest
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.GetOtpRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Success
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "409":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      summary: Send otp to user
+      tags:
+      - Users
+  /v1/users/send-seller-otp:
+    post:
+      consumes:
+      - application/json
+      description: Send otp to user
+      parameters:
+      - description: GetOtpRequest
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.GetOtpRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Success
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "400":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+        "409":
+          description: Failed
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      summary: Send otp to user
+      tags:
+      - Users
+securityDefinitions:
+  AuthBearer:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

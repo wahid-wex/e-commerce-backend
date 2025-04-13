@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="Admin">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="BaseHttpResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/helper/base_response.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="BaseService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/services/base.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Cart">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/order.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CartItem">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/order.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Category">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CategoryHandler">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/handler/category.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CategoryResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CategoryService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/services/category.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Config">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CorsConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CreateUpdateCategoryRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CreateUpdateProductRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Customer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CustomerHandler">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/handler/customer.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CustomerService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/services/customer_service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DynamicFilter">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/filter.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Filter">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/filter.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GetOtpRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="JWTConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="LoggerConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="LoginByUsernameRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Order">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/order.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OrderItem">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/order.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OtpConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OtpDto">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/services/otp_Service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OtpService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/services/otp_Service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PagedList">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/filter.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PaginationInput">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/filter.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PaginationInputWithFilter">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/filter.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PasswordConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Payment">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/payment.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Permission">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PostgresConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Product">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ProductAnswer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ProductAttribute">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ProductQuestion">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ProductReaction">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ProductResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ProductService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/handler/product.go" />
+              <option value="file://$PROJECT_DIR$/src/services/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ProductStock">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RedisConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RegisterCustomerByUsernameRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RegisterLoginByMobileRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RegisterSellerByUsernameRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Review">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/product.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Role">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RolePermission">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Seller">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SellerHandler">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/handler/seller.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SellerService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/services/seller_service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ServerConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/config/config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ServiceError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/error_handler/service_error.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Sort">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/filter.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="TokenDetail">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/dto/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="TokenService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/services/token_service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UserRole">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/data/models/user.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/validation/custom.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="bodyLogWriter">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/api/middleware/logger.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="preload">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/services/base.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="tokenDto">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/services/token_service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="zapLogger">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/logs/zap_logger.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="zeroLogger">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/src/logs/zero_logger.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="scannedPathMapping">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/api/api.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743970972316" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/dto/filter.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742630402796" />
+              <option name="schema">
+                <list>
+                  <option value="Sort" />
+                  <option value="Filter" />
+                  <option value="DynamicFilter" />
+                  <option value="PagedList" />
+                  <option value="PaginationInput" />
+                  <option value="PaginationInputWithFilter" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/dto/product.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1744270346155" />
+              <option name="schema">
+                <list>
+                  <option value="CreateUpdateCategoryRequest" />
+                  <option value="CategoryResponse" />
+                  <option value="CreateUpdateProductRequest" />
+                  <option value="ProductResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/dto/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742991146466" />
+              <option name="schema">
+                <list>
+                  <option value="GetOtpRequest" />
+                  <option value="TokenDetail" />
+                  <option value="RegisterCustomerByUsernameRequest" />
+                  <option value="RegisterSellerByUsernameRequest" />
+                  <option value="RegisterLoginByMobileRequest" />
+                  <option value="LoginByUsernameRequest" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/error_handler/error_code.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742720647556" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/error_handler/service_error.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742720647476" />
+              <option name="schema">
+                <list>
+                  <option value="ServiceError" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/handler/base.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743667018024" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/handler/category.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743672362376" />
+              <option name="schema">
+                <list>
+                  <option value="CategoryHandler" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/handler/customer.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743427611604" />
+              <option name="schema">
+                <list>
+                  <option value="CustomerHandler" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/handler/product.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743970761401" />
+              <option name="schema">
+                <list>
+                  <option value="ProductService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/handler/seller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743075087039" />
+              <option name="schema">
+                <list>
+                  <option value="SellerHandler" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/helper/base_response.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742720221203" />
+              <option name="schema">
+                <list>
+                  <option value="BaseHttpResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/helper/result_code.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740729740321" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/helper/status_code_mapping.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742720647469" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/middleware/auth.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742991611934" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/middleware/cors.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742719788868" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/middleware/custom_recovery.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742719898808" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/middleware/limiter.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742720647450" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/middleware/logger.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742720647484" />
+              <option name="schema">
+                <list>
+                  <option value="bodyLogWriter" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/router/category.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743672572121" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/router/product.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743970972328" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/router/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743073365627" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/validation/custom.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742630402797" />
+              <option name="schema">
+                <list>
+                  <option value="ValidationError" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/validation/mobile.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742720221043" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/api/validation/password.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742720221059" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/cmd/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742807412163" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/common/mapper.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742630402797" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/common/persian.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740247400473" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/common/strings.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742805879959" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/config/config.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743431050839" />
+              <option name="schema">
+                <list>
+                  <option value="Config" />
+                  <option value="ServerConfig" />
+                  <option value="LoggerConfig" />
+                  <option value="PostgresConfig" />
+                  <option value="RedisConfig" />
+                  <option value="PasswordConfig" />
+                  <option value="CorsConfig" />
+                  <option value="OtpConfig" />
+                  <option value="JWTConfig" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/constants/constanst.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742977848016" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/data/cache/redis.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742658553750" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/data/db/migrations/init.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742805765463" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/data/db/postgres.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742658237880" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/data/models/order.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742650823164" />
+              <option name="schema">
+                <list>
+                  <option value="Cart" />
+                  <option value="CartItem" />
+                  <option value="Order" />
+                  <option value="OrderItem" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/data/models/payment.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742650953774" />
+              <option name="schema">
+                <list>
+                  <option value="Payment" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/data/models/product.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742650907483" />
+              <option name="schema">
+                <list>
+                  <option value="Category" />
+                  <option value="Product" />
+                  <option value="ProductAttribute" />
+                  <option value="ProductStock" />
+                  <option value="ProductReaction" />
+                  <option value="ProductQuestion" />
+                  <option value="ProductAnswer" />
+                  <option value="Review" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/data/models/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743431982762" />
+              <option name="schema">
+                <list>
+                  <option value="Customer" />
+                  <option value="Seller" />
+                  <option value="Admin" />
+                  <option value="Role" />
+                  <option value="Permission" />
+                  <option value="RolePermission" />
+                  <option value="UserRole" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/docs/docs.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1744270834590" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/logs/category.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742630402799" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/logs/log_helper.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740247400477" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/logs/logger.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742658458992" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/logs/zap_logger.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742658438303" />
+              <option name="schema">
+                <list>
+                  <option value="zapLogger" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/logs/zero_logger.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742658501892" />
+              <option name="schema">
+                <list>
+                  <option value="zeroLogger" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/services/base.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1744270556414" />
+              <option name="schema">
+                <list>
+                  <option value="preload" />
+                  <option value="BaseService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/services/category.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743675477855" />
+              <option name="schema">
+                <list>
+                  <option value="CategoryService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/services/customer_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743082045342" />
+              <option name="schema">
+                <list>
+                  <option value="CustomerService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/services/otp_Service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742733456391" />
+              <option name="schema">
+                <list>
+                  <option value="OtpService" />
+                  <option value="OtpDto" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/services/product.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743970323239" />
+              <option name="schema">
+                <list>
+                  <option value="ProductService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/services/seller_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1743432046376" />
+              <option name="schema">
+                <list>
+                  <option value="SellerService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/src/services/token_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1742977848230" />
+              <option name="schema">
+                <list>
+                  <option value="TokenService" />
+                  <option value="tokenDto" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="tableStructMapping">
+      <map>
+        <entry key="admin" value="Admin" />
+        <entry key="base_http_response" value="BaseHttpResponse" />
+        <entry key="base_service" value="BaseService" />
+        <entry key="body_log_writer" value="bodyLogWriter" />
+        <entry key="cart" value="Cart" />
+        <entry key="cart_item" value="CartItem" />
+        <entry key="category" value="Category" />
+        <entry key="category_handler" value="CategoryHandler" />
+        <entry key="category_response" value="CategoryResponse" />
+        <entry key="category_service" value="CategoryService" />
+        <entry key="config" value="Config" />
+        <entry key="cors_config" value="CorsConfig" />
+        <entry key="create_update_category_request" value="CreateUpdateCategoryRequest" />
+        <entry key="create_update_product_request" value="CreateUpdateProductRequest" />
+        <entry key="customer" value="Customer" />
+        <entry key="customer_handler" value="CustomerHandler" />
+        <entry key="customer_service" value="CustomerService" />
+        <entry key="dynamic_filter" value="DynamicFilter" />
+        <entry key="filter" value="Filter" />
+        <entry key="get_otp_request" value="GetOtpRequest" />
+        <entry key="jwt_config" value="JWTConfig" />
+        <entry key="logger_config" value="LoggerConfig" />
+        <entry key="login_by_username_request" value="LoginByUsernameRequest" />
+        <entry key="order" value="Order" />
+        <entry key="order_item" value="OrderItem" />
+        <entry key="otp_config" value="OtpConfig" />
+        <entry key="otp_dto" value="OtpDto" />
+        <entry key="otp_service" value="OtpService" />
+        <entry key="paged_list" value="PagedList" />
+        <entry key="pagination_input" value="PaginationInput" />
+        <entry key="pagination_input_with_filter" value="PaginationInputWithFilter" />
+        <entry key="password_config" value="PasswordConfig" />
+        <entry key="payment" value="Payment" />
+        <entry key="permission" value="Permission" />
+        <entry key="postgres_config" value="PostgresConfig" />
+        <entry key="preload" value="preload" />
+        <entry key="product" value="Product" />
+        <entry key="product_answer" value="ProductAnswer" />
+        <entry key="product_attribute" value="ProductAttribute" />
+        <entry key="product_question" value="ProductQuestion" />
+        <entry key="product_reaction" value="ProductReaction" />
+        <entry key="product_response" value="ProductResponse" />
+        <entry key="product_service" value="ProductService" />
+        <entry key="product_stock" value="ProductStock" />
+        <entry key="redis_config" value="RedisConfig" />
+        <entry key="register_customer_by_username_request" value="RegisterCustomerByUsernameRequest" />
+        <entry key="register_login_by_mobile_request" value="RegisterLoginByMobileRequest" />
+        <entry key="register_seller_by_username_request" value="RegisterSellerByUsernameRequest" />
+        <entry key="review" value="Review" />
+        <entry key="role" value="Role" />
+        <entry key="role_permission" value="RolePermission" />
+        <entry key="seller" value="Seller" />
+        <entry key="seller_handler" value="SellerHandler" />
+        <entry key="seller_service" value="SellerService" />
+        <entry key="server_config" value="ServerConfig" />
+        <entry key="service_error" value="ServiceError" />
+        <entry key="sort" value="Sort" />
+        <entry key="token_detail" value="TokenDetail" />
+        <entry key="token_dto" value="tokenDto" />
+        <entry key="token_service" value="TokenService" />
+        <entry key="user_role" value="UserRole" />
+        <entry key="validation_error" value="ValidationError" />
+        <entry key="zap_logger" value="zapLogger" />
+        <entry key="zero_logger" value="zeroLogger" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1744564569976" />
+  </component>
+</project>
