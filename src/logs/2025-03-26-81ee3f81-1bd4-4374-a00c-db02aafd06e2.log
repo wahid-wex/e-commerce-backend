@@ -1,0 +1,1 @@
+{"level":"info","ts":"2025-03-26T17:01:11.185+0330","caller":"api/api.go:33","msg":"Started","AppName":"MyApp","LoggerName":"Zaplog","Category":"General","SubCategory":"Startup"}
