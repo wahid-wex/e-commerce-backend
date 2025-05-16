@@ -46,6 +46,20 @@ definitions:
       name:
         type: string
     type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.CheckoutRequest:
+    properties:
+      shippingAddress:
+        type: string
+    required:
+    - shippingAddress
+    type: object
+  github_com_wahid-wex_e-commerce-backend_api_dto.CheckoutResponse:
+    properties:
+      paymentGatewayUrl:
+        type: string
+    required:
+    - paymentGatewayUrl
+    type: object
   github_com_wahid-wex_e-commerce-backend_api_dto.CreateReviewRequest:
     properties:
       content:
@@ -638,6 +652,37 @@ paths:
       summary: Get a Category
       tags:
       - Categories
+  /v1/order/:
+    post:
+      consumes:
+      - application/json
+      description: Finalize Order
+      parameters:
+      - description: Finalize Order
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CheckoutRequest'
+      responses:
+        "200":
+          description: Product response
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+            - properties:
+                result:
+                  $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CheckoutResponse'
+              type: object
+        "400":
+          description: Bad request
+          schema:
+            $ref: '#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse'
+      security:
+      - AuthBearer: []
+      summary: Finalize Order
+      tags:
+      - Order
   /v1/products/:
     post:
       consumes:

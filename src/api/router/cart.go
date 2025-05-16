@@ -8,7 +8,7 @@ import (
 )
 
 func Cart(r *gin.RouterGroup, cfg *config.Config) {
-	h := handlers.NewCartService(cfg)
+	h := handlers.NewCartHandler(cfg)
 
 	r.POST("/", middlewares.Authorization([]string{"customer"}), h.AddToCart)
 	r.DELETE("/", middlewares.Authorization([]string{"customer"}), h.RemoveFromCart)

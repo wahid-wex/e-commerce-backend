@@ -12,12 +12,12 @@ import (
 	"net/http"
 )
 
-type CartService struct {
+type CartHandler struct {
 	service *services.CartService
 }
 
-func NewCartService(cfg *config.Config) *CartService {
-	return &CartService{service: services.NewCartService(cfg)}
+func NewCartHandler(cfg *config.Config) *CartHandler {
+	return &CartHandler{service: services.NewCartService(cfg)}
 }
 
 // RemoveFromCart godoc
@@ -31,7 +31,7 @@ func NewCartService(cfg *config.Config) *CartService {
 // @Failure 400 {object} helper.BaseHttpResponse "Bad request"
 // @Router /v1/cart/ [delete]
 // @Security AuthBearer
-func (h *CartService) RemoveFromCart(c *gin.Context) {
+func (h *CartHandler) RemoveFromCart(c *gin.Context) {
 	req := new(dto.CartItemRequest)
 	err := c.ShouldBindJSON(&req)
 	if err != nil {
@@ -68,7 +68,7 @@ func (h *CartService) RemoveFromCart(c *gin.Context) {
 // @Failure 400 {object} helper.BaseHttpResponse "Bad request"
 // @Router /v1/cart/ [post]
 // @Security AuthBearer
-func (h *CartService) AddToCart(c *gin.Context) {
+func (h *CartHandler) AddToCart(c *gin.Context) {
 	req := new(dto.CartItemRequest)
 	err := c.ShouldBindJSON(&req)
 	if err != nil {
@@ -104,7 +104,7 @@ func (h *CartService) AddToCart(c *gin.Context) {
 // @Failure 400 {object} helper.BaseHttpResponse "Bad request"
 // @Router /v1/cart/ [get]
 // @Security AuthBearer
-func (h *CartService) GetCart(c *gin.Context) {
+func (h *CartHandler) GetCart(c *gin.Context) {
 	customerID, exists := c.Get(constants.UserIdKey)
 	if !exists {
 		c.AbortWithStatusJSON(http.StatusUnauthorized, &helper.BaseHttpResponse{

@@ -53,6 +53,9 @@ func RegisterRoutes(r *gin.Engine, cfg *config.Config) {
 	cart := v1.Group("/cart", middlewares.Authentication(cfg))
 	router.Cart(cart, cfg)
 
+	Order := v1.Group("/order", middlewares.Authentication(cfg))
+	router.Order(Order, cfg)
+
 }
 
 func RegisterValidators() {

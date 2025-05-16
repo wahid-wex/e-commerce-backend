@@ -383,6 +383,60 @@
                 }
             }
         },
+        "/v1/order/": {
+            "post": {
+                "security": [
+                    {
+                        "AuthBearer": []
+                    }
+                ],
+                "description": "Finalize Order",
+                "consumes": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Order"
+                ],
+                "summary": "Finalize Order",
+                "parameters": [
+                    {
+                        "description": "Finalize Order",
+                        "name": "Request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CheckoutRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Product response",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "result": {
+                                            "$ref": "#/definitions/github_com_wahid-wex_e-commerce-backend_api_dto.CheckoutResponse"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_wahid-wex_e-commerce-backend_api_helper.BaseHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
         "/v1/products/": {
             "post": {
                 "security": [
@@ -1385,6 +1439,28 @@
                     "type": "string"
                 },
                 "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "github_com_wahid-wex_e-commerce-backend_api_dto.CheckoutRequest": {
+            "type": "object",
+            "required": [
+                "shippingAddress"
+            ],
+            "properties": {
+                "shippingAddress": {
+                    "type": "string"
+                }
+            }
+        },
+        "github_com_wahid-wex_e-commerce-backend_api_dto.CheckoutResponse": {
+            "type": "object",
+            "required": [
+                "paymentGatewayUrl"
+            ],
+            "properties": {
+                "paymentGatewayUrl": {
                     "type": "string"
                 }
             }

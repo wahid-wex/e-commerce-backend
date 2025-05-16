@@ -134,7 +134,6 @@ func (s *CustomerService) RegisterByUsername(req *dto.RegisterCustomerByUsername
 
 }
 
-// Register/login by mobile number
 func (s *CustomerService) RegisterLoginByMobileNumber(req *dto.RegisterLoginByMobileRequest) (*dto.TokenDetail, error) {
 	err := s.otpService.ValidateOtp(req.MobileNumber, req.Otp)
 	if err != nil {
